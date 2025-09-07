@@ -1,4 +1,6 @@
 function createGrid(size){
+  const divs = document.querySelectorAll('.row');
+  divs.forEach(div => div.remove());
     size = prompt("How big do you want your grid?")
     const container = document.querySelector(".container");
     container.classList.add("sketchpad")
