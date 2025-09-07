@@ -1,0 +1,52 @@
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.sketchpad {
+  width: 85vw;            /* 2/3 of the viewport width */
+  height: 85vh;             /* 85% of the viewport height */    
+  border-radius: 10px;      /* rounded corners */
+  background: linear-gradient(to bottom, #f9f9f9, #eaeaea); /* fine grey gradient */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* subtle drop shadow */
+  flex-direction:column;
+  display: flex;            /* optional: to help with child layout */
+}
+
+.cell {
+  flex: 1;
+}
+
+.row {
+  flex: 1;
+  display:flex;
+}
+
+.makeGrid {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: large;
+    display: inline-block;
+    padding: 0.6em 1.4em;        /* pill shape padding */
+    border-radius: 9999px;       /* fully rounded ends */
+    background: #fff;            /* white background */
+    border: 1px solid #ccc;      /* subtle dark grey border */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.12); /* subtle glow directly behind */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;                 /* dark text */
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.makeGrid:hover{
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.18); /* slightly stronger on hover */
+
+}
