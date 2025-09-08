@@ -22,6 +22,9 @@ cells.forEach(cell => {
   cell.addEventListener("mouseenter", () => {
     cell.style.backgroundColor = "#002FA7"; // or whatever color you want
   });
+    cell.addEventListener("touchstart", () => {
+    cell.style.backgroundColor = "#002FA7"; // or whatever color you want
+  });
 });
 }
 
