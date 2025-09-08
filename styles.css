@@ -2,13 +2,14 @@ html, body {
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction:column;
+  padding-top: 20px;
 }
 
 .sketchpad {
-  width: 85vw;            /* 2/3 of the viewport width */
+  width: 85vh;            /* 2/3 of the viewport width */
   height: 85vh;             /* 85% of the viewport height */    
   border-radius: 10px;      /* rounded corners */
   background: linear-gradient(to bottom, #f9f9f9, #eaeaea); /* fine grey gradient */
